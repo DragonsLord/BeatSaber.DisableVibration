@@ -30,18 +30,6 @@ namespace BeatSaber.DisableVibration
             Log.Info("BeatSaber.DisableVibration initialized.");
         }
 
-        #region BSIPA Config
-        //Uncomment to use BSIPA's config
-        /*
-        [Init]
-        public void InitWithConfig(Config conf)
-        {
-            Configuration.PluginConfig.Instance = conf.Generated<Configuration.PluginConfig>();
-            Log.Debug("Config loaded");
-        }
-        */
-        #endregion
-
         static bool SendHapticImpulsePrefix(ref bool __result)
         {
             __result = false;
